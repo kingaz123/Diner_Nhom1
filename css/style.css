@@ -21,6 +21,15 @@ body {
   --title: #232121;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* Title */
 .title h2 {
   font-size: 20px;
@@ -37,4 +46,120 @@ body {
   line-height: 48px;
   font-weight: 600;
   color: var(--title);
+}
+
+/*! HEADER */
+header {
+  background-color: black;
+}
+.header__content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 20px;
+  padding: 40px 0 20px 0;
+  align-items: center;
+}
+
+.header__right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.header__right .header__search {
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+}
+
+.header__right .header__search .search__input {
+  display: flex;
+  flex: 1;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  font-size: 16px;
+  color: #c2d0da;
+  border: none;
+  font-weight: 400;
+  border-radius: 8px;
+  position: relative;
+  right: 0;
+  background: #fdfbf8;
+  outline: 0;
+  border: 1px solid #232220;
+}
+
+.header__right .header__search .search__icon {
+  position: absolute;
+  right: 20px;
+  font-size: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+}
+
+.button {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fbfdfb;
+  font-size: 1.95em;
+  padding: 0 8px;
+}
+
+header .button i {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+@media (max-width: 600px) {
+  .header__right.header__search {
+    display: none;
+  }
+}
+
+header h1 a {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* switch button */
+#myBody {
+  background-color: white;
+}
+#switchButton {
+  background-color: white;
+  border: 1px solid black;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+.dark#myBody {
+  background-color: black;
+}
+.dark #switchButton {
+  background-color: black;
+  border: 1px solid white;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
 }
