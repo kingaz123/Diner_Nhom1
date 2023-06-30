@@ -1,0 +1,40 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  /* primary color */
+  --orange: #ff6600;
+  /* secondary color */
+  --yellow: #ffc600;
+  /* font color */
+  --font: rgba(22, 28, 45, 0.7);
+  /* title font (p)  */
+  --title: #232121;
+}
+
+/* Title */
+.title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: var(--orange);
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+
+.title p {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+  color: var(--title);
+}
