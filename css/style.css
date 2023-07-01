@@ -155,12 +155,6 @@ header {
   cursor: pointer;
 }
 
-.btn-theme {
-  background-color: transparent;
-  border: transparent;
-  padding: 0px 5px;
-}
-
 .button {
   outline: none;
   border: none;
