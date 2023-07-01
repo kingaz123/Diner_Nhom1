@@ -48,9 +48,67 @@ li {
   color: var(--title);
 }
 
+/* BUTTONS */
+/* Style chung của nút cam và nút trắng */
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(123, 89, 208, 0.25);
+}
+
+/* nút cam */
+.btn-orange {
+  color: #fff;
+  background-color: var(--orange);
+  border: solid var(--orange);
+}
+
+.btn-orange:hover {
+  color: #fff;
+  background-color: var(--orange);
+  border: var(--orange);
+  opacity: 0.8;
+}
+
+.btn-orange:focus {
+  color: #fff;
+  background-color: var(--orange);
+  border-color: var(--orange);
+  box-shadow: 0 0 0 0.2rem rgba(143, 114, 215, 0.5);
+}
+/* nút trắng */
+.btn-white {
+  color: #fff;
+  background: transparent;
+  border: solid #fff;
+}
+
+.btn-white:hover {
+  color: var(--orange);
+  background: #fff;
+  border: #fff;
+}
+
 /*! HEADER */
 header {
-  background-color: black;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 .header__content {
   display: grid;
@@ -87,7 +145,6 @@ header {
   right: 0;
   background: #fdfbf8;
   outline: 0;
-  border: 1px solid #232220;
 }
 
 .header__right .header__search .search__icon {
@@ -98,8 +155,10 @@ header {
   cursor: pointer;
 }
 
-.btn {
+.btn-theme {
   background-color: transparent;
+  border: transparent;
+  padding: 0px 5px;
 }
 
 .button {
@@ -114,7 +173,6 @@ header {
 
 header .button i {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
 }
@@ -138,28 +196,75 @@ header h1 a {
   background-color: white;
 }
 #switchButton {
-  background-color: white;
-  border: 1px solid black;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 10px 5px;
+  box-shadow: none;
 }
 #switchButton .fa-sun {
   display: none;
+  font-size: 22px;
+  color: white;
+  width: 20px;
+  height: 10px;
+  transform: rotate(22deg);
 }
 #switchButton .fa-moon {
-  display: block;
+  display: inline-block;
+  font-size: 22px;
+  color: white;
+  width: 20px;
+  height: 10px;
 }
 
 .dark#myBody {
   background-color: black;
 }
 .dark #switchButton {
-  background-color: black;
-  border: 1px solid white;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 10px 5px;
+  box-shadow: none;
 }
 .dark #switchButton .fa-sun {
-  display: block;
+  display: inline-block;
   color: white;
 }
 
 .dark #switchButton .fa-moon {
   display: none;
+}
+
+/*! CAROUSEL */
+.carousel {
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      var(--orange),
+      hsl(30deg 100% 1% / 20%)
+    ),
+    url(../img/banner1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+.carousel .carousel__content {
+  max-width: 600px;
+  text-align: left;
+  padding-top: 160px;
+}
+
+.carousel .carousel__content h3 {
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.carousel .carousel__content p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
 }
