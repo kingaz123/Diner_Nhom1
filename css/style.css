@@ -39,6 +39,7 @@ li {
   color: var(--orange);
   display: block;
   font-family: "Pacifico", cursive;
+  margin-bottom: 0px;
 }
 
 .title p {
@@ -46,6 +47,7 @@ li {
   line-height: 48px;
   font-weight: 600;
   color: var(--title);
+  margin-bottom: 0;
 }
 
 /* BUTTONS */
@@ -261,4 +263,86 @@ header h1 a {
   font-size: 16px;
   line-height: 28px;
   color: #fff;
+}
+
+/* ABOUTUS */
+
+/* RESTAURANTS */
+.restaurants {
+  background: var(--orange);
+}
+
+.restaurants__image {
+  background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg)
+    center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  min-height: 600px;
+}
+
+.restaurants__image::before {
+  content: "";
+  background: rgb(16 15 19 / 46%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.restaurants__content {
+  text-align: left;
+}
+
+.title.special h2 {
+  color: #fff;
+}
+
+.restaurants__content .restaurants__intro {
+  color: #ffdfc9;
+  font-size: 18px;
+}
+
+.restaurants__info {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.restaurants__item {
+  width: 50%;
+}
+
+.restaurants__icon {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background: white;
+  line-height: 70px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.restaurants__icon span {
+  color: var(--orange);
+  font-size: 25px;
+  line-height: 70px;
+}
+
+.restaurants__item:hover .restaurants__icon span {
+  color: var(--yellow);
+}
+
+.restaurants__text {
+  display: block;
+  color: black;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.restaurants__item p {
+  margin-bottom: 0;
 }
