@@ -30,6 +30,7 @@ a {
 a,
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -982,6 +983,12 @@ span.fa.fa-quote-left {
 .dark .aboutus__left p {
   background-color: #282828;
   color: #c2d0da;
+}
+
+/* restaurant */
+.dark .restaurants .title p,
+.dark .restaurants__item a {
+  color: #fff;
 }
 
 /* cat  */
