@@ -445,9 +445,7 @@ p.number__text {
 .category{
 background: #f7f7f7;
 }
-.dark #cat{
-  background-color: #282828;
-}
+
 .gal-slide-grid{
   width: 100%;
   cursor: pointer;
@@ -567,7 +565,7 @@ background: #f7f7f7;
   box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
   background-color:#fff;
   position: relative;
-  border: 1px solid #eee;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .box-wrap:hover {
   box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
@@ -934,5 +932,56 @@ span.fa.fa-quote-left {
 }
 
 
-/* DARK  */
-
+/*! DARK  */
+/* cat  */
+.dark #cat{
+  background-color: #282828;
+}
+.dark .title__gal p{
+  color: #EEEEEE;
+}
+/* services  */
+.dark #box {
+  background-color: #232220;
+}
+.dark #box p{
+  color: #c2d0da;
+}
+.dark #box a{
+  color: #eee;
+}
+.dark #box h4 a:hover{
+  color: var(--orange);
+}
+/* blog  */
+.dark #blog{
+  background-color: #282828;
+}
+.dark #blog p{
+  color: #eee;
+}
+.dark .card-body{
+  color: #eee;
+}
+.dark a.blog-desc{
+  color: #eee;
+}
+a.read:hover{
+  color: var(--orange);
+}
+/* .testimonial */
+.dark #test {
+  background-color: #232220;
+}
+.dark #test p{
+  color: #eee;
+}
+.dark q{
+  color: #eee;
+}
+.dark #test .testimonial p{
+  color: #c2d0da;
+}
+.dark #test h3{
+  color: #eee;
+}
