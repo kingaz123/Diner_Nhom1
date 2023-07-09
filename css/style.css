@@ -209,7 +209,7 @@ header h1 a {
   color: white;
   width: 20px;
   height: 10px;
-  transform: rotate(22deg) translateY(-5px);
+  transform: rotate(22deg);
 }
 #switchButton .fa-moon {
   display: inline-block;
@@ -217,24 +217,6 @@ header h1 a {
   color: white;
   width: 20px;
   height: 10px;
-}
-
-.dark#myBody {
-  background-color: black;
-}
-.dark #switchButton {
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 10px 5px;
-  box-shadow: none;
-}
-.dark #switchButton .fa-sun {
-  display: inline-block;
-  color: white;
-}
-
-.dark #switchButton .fa-moon {
-  display: none;
 }
 
 /*! CAROUSEL */
@@ -968,15 +950,16 @@ span.fa.fa-quote-left {
 /*! DARK THEME  */
 /* header */
 .dark#myBody {
-  background-color: white;
+  background-color: black;
 }
-
 .dark #switchButton {
   background-color: transparent;
+  border: 1px solid transparent;
+  padding: 10px 5px;
+  box-shadow: none;
 }
-
 .dark #switchButton .fa-sun {
-  display: block;
+  display: inline-block;
   color: white;
 }
 
@@ -995,32 +978,10 @@ span.fa.fa-quote-left {
   color: #404040;
 }
 
-.dark .footer__contact a {
-  background-color: #282828;
-  color: #ff6600;
-  border: #282828;
-}
-
-.dark .number__timer {
-  color: white;
-}
-
-.dark .number__text {
-  color: #c2d0da;
-}
-
+/* about us */
 .dark .aboutus__left p {
   background-color: #282828;
   color: #c2d0da;
-}
-.dark .number,
-.dark .number__item,
-.dark .video__background {
-  background-color: #232220;
-}
-
-#switchButton {
-  font-size: 25px;
 }
 
 /* cat  */
@@ -1043,6 +1004,28 @@ span.fa.fa-quote-left {
 .dark #box h4 a:hover {
   color: var(--orange);
 }
+
+/* number  */
+
+.dark .number__timer {
+  color: white;
+}
+
+.dark .number__text {
+  color: #c2d0da;
+}
+
+.dark .number,
+.dark .number__item {
+  background-color: #232220;
+}
+
+/* video */
+
+.dark .video__background {
+  background-color: #232220;
+}
+
 /* blog  */
 .dark #blog {
   background-color: #282828;
@@ -1074,4 +1057,12 @@ a.read:hover {
 }
 .dark #test h3 {
   color: #eee;
+}
+
+/* footer */
+
+.dark .footer__contact a {
+  background-color: #282828;
+  color: #ff6600;
+  border: #282828;
 }
