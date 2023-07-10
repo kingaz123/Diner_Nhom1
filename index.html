@@ -67,22 +67,22 @@
             </div>
           </div>
           <!-- navigation bar -->
-          <nav class="dropdown show">
-            <a class="button btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-solid fa-bars"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">About</a>
-              <a class="dropdown-item" href="#">Service</a>
-              <a class="dropdown-item" href="#">Blog</a>
-              <a class="dropdown-item" href="#">404</a>
-              <a class="dropdown-item" href="#">Landing Page</a>
-              <a class="dropdown-item" href="#">Contact</a>
-              <a class="dropdown-item" href="#">Shot Code</a>
-              <a class="dropdown-item" href="#">Email</a>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Blog Posts</a>
+              <a href="#">404 Page</a>
+              <a href="#">Elements</a>
+              <a href="#">Contact</a>
+              <a href="#">Landing Page</a>
             </div>
+          </div>
+          <span class="button btn-secondary" style="font-size:30px;cursor:pointer" onclick="openNav()"><i
+              class="fa fa-solid fa-bars"></i></span>
+
           </nav>
         </div>
       </div>
@@ -766,6 +766,16 @@
     };
   </script>
 
+  <!-- Fullscreen Overlay Nav Example -->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
   <!-- Count-up plugin -->
   <script src="./js/jquery.countup.min.js"></script>
   <script>$('.counter').countUp({
