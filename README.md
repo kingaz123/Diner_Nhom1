@@ -12,11 +12,11 @@
 | STT | **Nhiệm vụ**                             | **Thành viên** |
 | --- | ---------------------------------------- | -------------- |
 | 1   | Tổ chức dự án + code các phần dùng chung | Quang          |
-| 2   | header + carousel                        | Quang          |
-| 3   | restaurants                              | Quang          |
-| 4   | number                                   | Quang          |
-| 5   | video                                    | Quang          |
-| 6   | nút back-to-top                          | Quang          |
+| 2   | Header + Carousel                        | Quang          |
+| 3   | Restaurants                              | Quang          |
+| 4   | Number                                   | Quang          |
+| 5   | Video                                    | Quang          |
+| 6   | Nút back-to-top                          | Quang          |
 | 7   | Category                                 | Thư            |
 | 8   | Services                                 | Thư            |
 | 9   | Blog                                     | Thư            |
