@@ -1010,7 +1010,7 @@ footer a:hover {
 .backToTop {
   width: 50px;
   height: 50px;
-  background: #ff6600;
+  background: var(--orange);
   border-radius: 50%;
   line-height: 50px;
   text-align: center;
