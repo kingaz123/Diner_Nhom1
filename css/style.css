@@ -1181,3 +1181,14 @@ a.read:hover {
   color: #ff6600;
   border: #282828;
 }
+
+/*! Responsive*/
+/* Đã sử dụng responsive bằng các class bootstrap, tuy nhiên một số chổ không chỉnh được bằng class bootstrap thì sẽ được chỉnh ở dưới */
+/* Header */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  #searchBar,
+  .search__icon {
+    display: none;
+  }
+}
