@@ -323,6 +323,7 @@ header h1 a {
   color: var(--orange);
   font-size: 25px;
   line-height: 70px;
+  transition: all 0.5s;
 }
 
 .restaurants__item:hover .restaurants__icon span {
@@ -1069,8 +1070,7 @@ footer a:hover {
   display: none;
 }
 
-.dark #searchBar,
-.dark #email {
+.dark #searchBar {
   background-color: #282828;
   color: white;
   border: #282828;
@@ -1099,7 +1099,7 @@ footer a:hover {
   color: #fff;
 }
 
-/* cat  */
+/* category  */
 .dark #cat {
   background-color: #282828;
 }
@@ -1178,14 +1178,28 @@ a.read:hover {
 
 .dark .footer__contact a {
   background-color: #282828;
-  color: #ff6600;
+  color: var(--orange);
   border: #282828;
+}
+
+.dark .footer__contact a:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.dark #email {
+  background-color: #282828;
+  color: white;
+  border: #282828;
+}
+
+.dark #email:focus {
+  border: 2px solid var(--orange);
 }
 
 /*! Responsive*/
 /* Đã sử dụng responsive bằng các class bootstrap, tuy nhiên một số chổ không chỉnh được bằng class bootstrap thì sẽ được chỉnh ở dưới */
 /* Header */
-/* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
   #searchBar,
   .search__icon {
