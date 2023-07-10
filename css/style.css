@@ -180,12 +180,6 @@ header .button i {
   text-rendering: auto;
 }
 
-@media (max-width: 600px) {
-  .header__right.header__search {
-    display: none;
-  }
-}
-
 header h1 a {
   margin: 0;
   padding: 0;
@@ -210,7 +204,7 @@ header h1 a {
   color: white;
   width: 20px;
   height: 10px;
-  transform: rotate(22deg);
+  transform: rotate(22deg) translateY(2px);
 }
 #switchButton .fa-moon {
   display: inline-block;
@@ -218,8 +212,10 @@ header h1 a {
   color: white;
   width: 20px;
   height: 10px;
+  transform: translateY(2px);
 }
 
+/* navigation bar */
 header .overlay {
   height: 100%;
   width: 0;
@@ -270,17 +266,6 @@ header .overlay .closebtn {
   background: var(--orange);
   color: #fff;
   border-radius: 8px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 }
 
 /*! CAROUSEL */
@@ -1267,5 +1252,84 @@ a.read:hover {
   #searchBar,
   .search__icon {
     display: none;
+  }
+}
+
+@media screen and (max-height: 575px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Number */
+
+@media (max-width: 991px) {
+  .number__contact h3 {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .number__contact h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .number__intro {
+    height: 22rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .number .btn-orange,
+  .number .btn-white {
+    padding: 7px 28px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .number__intro {
+    height: 20rem;
+  }
+
+  .number__contact h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .number__content .row__item {
+    margin-top: 12px !important;
+    z-index: 10;
+    position: relative;
+  }
+}
+
+@media (max-width: 575px) {
+  .numer__timer {
+    font-size: 2em;
+  }
+
+  .number__item {
+    text-align: center;
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .number__item .number__text {
+    font-size: 0.9em;
   }
 }
