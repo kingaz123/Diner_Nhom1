@@ -1,4 +1,5 @@
 /* GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +38,9 @@ li {
   list-style-type: none;
 }
 
+
 /* Title */
+
 .title h2 {
   font-size: 20px;
   font-weight: 400;
@@ -57,8 +60,12 @@ li {
   margin-bottom: 0;
 }
 
+
 /* BUTTONS */
+
+
 /* Style chung của nút cam và nút trắng */
+
 .btn {
   display: inline-block;
   text-align: center;
@@ -77,7 +84,9 @@ li {
   box-shadow: 0 0 0 0.2rem rgba(123, 89, 208, 0.25);
 }
 
+
 /* nút cam */
+
 .btn-orange {
   color: #fff;
   background-color: var(--orange);
@@ -97,7 +106,10 @@ li {
   border-color: 2px solid var(--orange);
   box-shadow: 0 0 0 0.2rem rgba(143, 114, 215, 0.5);
 }
+
+
 /* nút trắng */
+
 .btn-white {
   color: #fff;
   background: transparent;
@@ -110,7 +122,9 @@ li {
   border: 2px solid #fff;
 }
 
+
 /*! HEADER */
+
 header {
   background-color: transparent;
   position: absolute;
@@ -119,6 +133,7 @@ header {
   width: 100%;
   z-index: 1;
 }
+
 .header__content {
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -188,16 +203,20 @@ header h1 a {
   color: #fff;
 }
 
+
 /* switch button */
+
 #myBody {
   background-color: white;
 }
+
 #switchButton {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 10px 5px;
   box-shadow: none;
 }
+
 #switchButton .fa-sun {
   display: none;
   font-size: 22px;
@@ -206,6 +225,7 @@ header h1 a {
   height: 10px;
   transform: rotate(22deg) translateY(2px);
 }
+
 #switchButton .fa-moon {
   display: inline-block;
   font-size: 22px;
@@ -215,7 +235,9 @@ header h1 a {
   transform: translateY(2px);
 }
 
+
 /* navigation bar */
+
 header .overlay {
   height: 100%;
   width: 0;
@@ -268,15 +290,12 @@ header .overlay .closebtn {
   border-radius: 8px;
 }
 
+
 /*! CAROUSEL */
+
 .DinerCarousel {
   background-size: cover;
-  background-image: linear-gradient(
-      to right,
-      var(--orange),
-      hsl(30deg 100% 1% / 20%)
-    ),
-    url(../img/banner1.jpg);
+  background-image: linear-gradient( to right, var(--orange), hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 700px;
@@ -302,7 +321,9 @@ header .overlay .closebtn {
   color: #fff;
 }
 
+
 /*! ABOUT US */
+
 .aboutus__right p {
   color: var(--font);
   font-size: 18px;
@@ -310,14 +331,15 @@ header .overlay .closebtn {
   line-height: 28px;
 }
 
+
 /*! RESTAURANTS */
+
 .restaurants {
   background: var(--orange);
 }
 
 .restaurants__image {
-  background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg)
-    center;
+  background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg) center;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -391,6 +413,7 @@ header .overlay .closebtn {
   margin-bottom: 0;
 }
 
+
 /*! CATEGORY  */
 
 .category {
@@ -404,9 +427,11 @@ header .overlay .closebtn {
   position: relative;
   margin-bottom: 32px;
 }
+
 .gal-slide-grid img {
   position: relative;
 }
+
 .gal-slide-img:after {
   bottom: 0;
   left: 0;
@@ -419,6 +444,7 @@ header .overlay .closebtn {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
+
 .gal-slide-img img {
   display: block;
   margin: 0 auto;
@@ -429,6 +455,7 @@ header .overlay .closebtn {
   -o-border-radius: 6px;
   -moz-border-radius: 6px;
 }
+
 .gal-slide-info {
   left: auto;
   bottom: 0;
@@ -440,10 +467,12 @@ header .overlay .closebtn {
   transform: translate3d(0, 10%, 0);
   transition: opacity 0.3s;
 }
+
 .gal-slide-info h4 {
   font-size: 18px;
   color: #fff;
 }
+
 .gal-slide-grid .gal-slide-img:after {
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%); */
   transition-duration: 300ms;
@@ -454,30 +483,37 @@ header .overlay .closebtn {
   -o-border-radius: 6px;
   -moz-border-radius: 6px;
 }
+
 .gal-slide-info {
   transform: translate3d(0, -5%, 0);
   transform: translate3d(0, -10%, 0);
 }
+
 .category img:hover {
   opacity: 0.85;
   transition: all 0.4s;
 }
+
 .gal-slide-grid .gal-slide-info {
   opacity: 1;
   transition: all 0.4s;
 }
+
 .content-left-sec a h4 {
   font-size: 22px;
   line-height: 30px;
   color: #fff;
   font-weight: 700;
 }
+
 .content-left-sec a:hover {
   text-decoration: none;
 }
+
 .content-left-sec a:hover {
   color: #4f9da6;
 }
+
 .content-left-sec h6 {
   display: inline-block;
   font-size: 18px;
@@ -485,12 +521,14 @@ header .overlay .closebtn {
   color: #fff;
   opacity: 0.9;
 }
+
 .gal-slide-info span {
   font-weight: 600;
   color: var(--yellow);
   font-size: 18px;
   letter-spacing: 1px;
 }
+
 @media all and (max-width: 800px) {
   .w3l-res-categories .content-left-sec a h4 {
     font-size: 18px;
@@ -505,10 +543,14 @@ header .overlay .closebtn {
     width: 90%;
   }
 }
+
+
 /*! SERVICES */
+
 .services {
   position: relative;
 }
+
 .box-wrap {
   padding: 40px 40px;
   transition: all 0.5s ease 0s;
@@ -518,6 +560,7 @@ header .overlay .closebtn {
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .box-wrap:hover {
   box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
 }
@@ -579,11 +622,14 @@ header .overlay .closebtn {
   font-size: 25px;
   line-height: 70px;
 }
+
 .box-wrap {
   color: #fff;
 }
 
+
 /*! NUMBER */
+
 .number__intro {
   background: url(../img/banner2.jpg);
   background-position: center;
@@ -673,7 +719,9 @@ p.number__text {
   font-weight: 600;
 }
 
+
 /*! VIDEO */
+
 .video__background {
   background: #fff;
 }
@@ -747,49 +795,65 @@ p.number__text {
 .mfp-close-btn-in .mfp-close {
   color: #fff;
 }
+
 .mfp-close,
 .mfp-close:active {
   top: -40px;
 }
 
+
 /* Fade-zoom animation for first dialog */
 
+
 /* start state */
+
 .my-mfp-zoom-in .zoom-anim-dialog {
   opacity: 0;
   transition: all 0.2s ease-in-out;
   transform: scale(0.8);
 }
 
+
 /* animate in */
+
 .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
   opacity: 1;
   transform: scale(1);
 }
 
+
 /* animate out */
+
 .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
   transform: scale(0.8);
   opacity: 0;
 }
 
+
 /* Dark overlay, start state */
+
 .my-mfp-zoom-in.mfp-bg {
   opacity: 0;
   transition: opacity 0.3s ease-out;
 }
 
+
 /* animate in */
+
 .my-mfp-zoom-in.mfp-ready.mfp-bg {
   opacity: 0.95;
 }
 
+
 /* animate out */
+
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
 
+
 /*! BLOG */
+
 .blogposts {
   background-color: #f7f7f7;
 }
@@ -802,10 +866,12 @@ p.number__text {
   border: none;
   border-radius: 0;
 }
+
 .post-pos a {
   color: #ff6600;
   transition: all 0.5s;
 }
+
 .post-pos a:hover {
   color: #5431ac;
 }
@@ -820,6 +886,7 @@ p.number__text {
   display: inline-block;
   letter-spacing: 0.05em;
 }
+
 .post-thumbnail img {
   width: 100%;
   min-height: 100%;
@@ -830,11 +897,13 @@ p.number__text {
   display: block;
   border-radius: 6px;
 }
+
 .post-pos {
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
+
 a.blog-desc {
   display: block;
   font-size: 24px;
@@ -848,6 +917,7 @@ a.blog-desc {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
 }
+
 .card-header {
   a.post-img-anchor {
     width: 100%;
@@ -858,6 +928,7 @@ a.blog-desc {
     object-position: center;
   }
 }
+
 a.post-img-anchor {
   width: 100%;
   min-height: 100%;
@@ -909,7 +980,9 @@ a.read:hover {
   color: var(--orange);
 }
 
+
 /*! TESTIMONIAL */
+
 .owl-carousel .owl-item img {
   width: 80px;
   height: 80px;
@@ -919,11 +992,13 @@ a.read:hover {
   border-radius: 50%;
   margin: 40px 0 20px;
 }
+
 span.fa.fa-quote-left {
   font-size: 22px;
   color: var(--orange);
   display: block;
 }
+
 blockquote q {
   font-size: 24px;
   line-height: 36px;
@@ -931,30 +1006,37 @@ blockquote q {
   font-weight: 600;
   font-style: italic;
 }
+
 .people-info h3 {
   margin: 0;
   font-weight: 600;
   font-size: 20px;
 }
+
 .testimonial p {
   color: #161c2db3;
   font-size: 18px;
 }
+
 .testimonial-content {
   max-width: 700px;
   margin: auto;
 }
+
 span.fa.fa-quote-left {
   font-size: 28px;
   color: var(--orange);
   display: block;
 }
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: var(--orange);
 }
 
+
 /*! FOOTER */
+
 footer {
   background: #000;
 }
@@ -1027,13 +1109,13 @@ footer a:hover {
   outline: none;
   width: 100%;
   color: rgba(22, 28, 45, 0.7);
-  background: #fff;
+  background: white;
   border-radius: 6px;
 }
 
 .footer__subscribe input:focus {
   border: 1px solid var(--orange);
-  background-color: #fff;
+  background-color: white;
 }
 
 .footer__subscribe .btn-orange {
@@ -1050,9 +1132,11 @@ footer a:hover {
 .footer__bottom a {
   color: var(--orange);
 }
+
 .footer__bottom a:hover {
   color: #fff;
 }
+
 
 /*! 'BACK TO TOP' BUTTON */
 
@@ -1084,31 +1168,38 @@ footer a:hover {
   opacity: 1;
 }
 
+
 /*! ANIMATION */
+
+
 /* Animation cho nút play của section "video" */
+
 @keyframes playButton {
   0% {
-    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
-      0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
   }
-
   100% {
-    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
-      0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }
 
+
 /*! DARK THEME  */
+
+
 /* header */
+
 .dark#myBody {
   background-color: black;
 }
+
 .dark #switchButton {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 10px 5px;
   box-shadow: none;
 }
+
 .dark #switchButton .fa-sun {
   display: inline-block;
   color: white;
@@ -1128,7 +1219,9 @@ footer a:hover {
   color: #404040;
 }
 
+
 /* about us */
+
 .dark .aboutus {
   background-color: #282828;
 }
@@ -1141,32 +1234,44 @@ footer a:hover {
   color: #c2d0da;
 }
 
+
 /* restaurant */
+
 .dark .restaurants .title p,
 .dark .restaurants__item a {
   color: #fff;
 }
 
+
 /* category  */
+
 .dark #cat {
   background-color: #282828;
 }
+
 .dark .title__gal p {
   color: #eeeeee;
 }
+
+
 /* services  */
+
 .dark #box {
   background-color: #232220;
 }
+
 .dark #box p {
   color: #c2d0da;
 }
+
 .dark #box a {
   color: #eee;
 }
+
 .dark #box h4 a:hover {
   color: var(--orange);
 }
+
 
 /* number  */
 
@@ -1183,44 +1288,59 @@ footer a:hover {
   background-color: #232220;
 }
 
+
 /* video */
 
 .dark .video__background {
   background-color: #232220;
 }
 
+
 /* blog  */
+
 .dark #blog {
   background-color: #282828;
 }
+
 .dark #blog p {
   color: #eee;
 }
+
 .dark .card-body {
   color: #eee;
 }
+
 .dark a.blog-desc {
   color: #eee;
 }
+
 a.read:hover {
   color: var(--orange);
 }
+
+
 /* .testimonial */
+
 .dark #test {
   background-color: #232220;
 }
+
 .dark #test p {
   color: #eee;
 }
+
 .dark q {
   color: #eee;
 }
+
 .dark #test .testimonial p {
   color: #c2d0da;
 }
+
 .dark #test h3 {
   color: #eee;
 }
+
 
 /* footer */
 
@@ -1245,9 +1365,15 @@ a.read:hover {
   border: 2px solid var(--orange);
 }
 
+
 /*! Responsive*/
+
+
 /* Đã sử dụng responsive bằng các class bootstrap, tuy nhiên một số chổ không chỉnh được bằng class bootstrap thì sẽ được chỉnh ở dưới */
+
+
 /* Header */
+
 @media (max-width: 575px) {
   #searchBar,
   .search__icon {
@@ -1266,6 +1392,7 @@ a.read:hover {
   }
 }
 
+
 /* Number */
 
 @media (max-width: 991px) {
@@ -1281,11 +1408,9 @@ a.read:hover {
     font-size: 30px;
     line-height: 40px;
   }
-
   .number__intro {
     height: 22rem;
   }
-
   .number__button {
     transform: translateY(-30px);
   }
@@ -1302,16 +1427,13 @@ a.read:hover {
     border-radius: 6px;
     cursor: pointer;
   }
-
   .number__intro {
     height: 20rem;
   }
-
   .number__contact h3 {
     font-size: 22px;
     line-height: 30px;
   }
-
   .number__button {
     transform: translateY(-10px);
   }
@@ -1329,7 +1451,6 @@ a.read:hover {
   .numer__timer {
     font-size: 2em;
   }
-
   .number__item {
     text-align: center;
     padding: 30px 10px;
