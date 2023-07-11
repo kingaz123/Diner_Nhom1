@@ -38,7 +38,6 @@ li {
   list-style-type: none;
 }
 
-
 /* Title */
 
 .title h2 {
@@ -60,9 +59,7 @@ li {
   margin-bottom: 0;
 }
 
-
 /* BUTTONS */
-
 
 /* Style chung của nút cam và nút trắng */
 
@@ -83,7 +80,6 @@ li {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(123, 89, 208, 0.25);
 }
-
 
 /* nút cam */
 
@@ -107,7 +103,6 @@ li {
   box-shadow: 0 0 0 0.2rem rgba(143, 114, 215, 0.5);
 }
 
-
 /* nút trắng */
 
 .btn-white {
@@ -121,7 +116,6 @@ li {
   background: #fff;
   border: 2px solid #fff;
 }
-
 
 /*! HEADER */
 
@@ -203,7 +197,6 @@ header h1 a {
   color: #fff;
 }
 
-
 /* switch button */
 
 #myBody {
@@ -234,7 +227,6 @@ header h1 a {
   height: 10px;
   transform: translateY(2px);
 }
-
 
 /* navigation bar */
 
@@ -290,12 +282,16 @@ header .overlay .closebtn {
   border-radius: 8px;
 }
 
-
 /*! CAROUSEL */
 
 .DinerCarousel {
   background-size: cover;
-  background-image: linear-gradient( to right, var(--orange), hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+  background-image: linear-gradient(
+      to right,
+      var(--orange),
+      hsl(30deg 100% 1% / 20%)
+    ),
+    url(../img/banner1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 700px;
@@ -321,7 +317,6 @@ header .overlay .closebtn {
   color: #fff;
 }
 
-
 /*! ABOUT US */
 
 .aboutus__right p {
@@ -331,7 +326,6 @@ header .overlay .closebtn {
   line-height: 28px;
 }
 
-
 /*! RESTAURANTS */
 
 .restaurants {
@@ -339,7 +333,8 @@ header .overlay .closebtn {
 }
 
 .restaurants__image {
-  background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg) center;
+  background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg)
+    center;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -412,7 +407,6 @@ header .overlay .closebtn {
 .restaurants__item p {
   margin-bottom: 0;
 }
-
 
 /*! CATEGORY  */
 
@@ -544,7 +538,6 @@ header .overlay .closebtn {
   }
 }
 
-
 /*! SERVICES */
 
 .services {
@@ -577,7 +570,7 @@ header .overlay .closebtn {
   margin-top: 5px;
   margin-bottom: 0px;
   display: block;
-  color: #232121;
+  color: var(--title);
 }
 
 .box-wrap h4 a:hover {
@@ -593,7 +586,7 @@ header .overlay .closebtn {
 
 .box-wrap p {
   margin: 0;
-  color: rgba(22, 28, 45, 0.7);
+  color: var(--font);
 }
 
 .icon {
@@ -626,7 +619,6 @@ header .overlay .closebtn {
 .box-wrap {
   color: #fff;
 }
-
 
 /*! NUMBER */
 
@@ -696,7 +688,7 @@ header .overlay .closebtn {
 }
 
 .number__item span.fa {
-  background: #ff6600;
+  background: var(--orange);
   font-size: 26px;
   border-radius: 50%;
   width: 68px;
@@ -709,16 +701,15 @@ header .overlay .closebtn {
 .number__timer {
   font-size: 2.6em;
   font-weight: 600;
-  color: #232121;
+  color: var(--title);
 }
 
 p.number__text {
   font-size: 1.1rem;
   text-transform: capitalize;
-  color: rgba(22, 28, 45, 0.7);
+  color: var(--font);
   font-weight: 600;
 }
-
 
 /*! VIDEO */
 
@@ -801,9 +792,7 @@ p.number__text {
   top: -40px;
 }
 
-
 /* Fade-zoom animation for first dialog */
-
 
 /* start state */
 
@@ -813,14 +802,12 @@ p.number__text {
   transform: scale(0.8);
 }
 
-
 /* animate in */
 
 .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
   opacity: 1;
   transform: scale(1);
 }
-
 
 /* animate out */
 
@@ -829,7 +816,6 @@ p.number__text {
   opacity: 0;
 }
 
-
 /* Dark overlay, start state */
 
 .my-mfp-zoom-in.mfp-bg {
@@ -837,20 +823,17 @@ p.number__text {
   transition: opacity 0.3s ease-out;
 }
 
-
 /* animate in */
 
 .my-mfp-zoom-in.mfp-ready.mfp-bg {
   opacity: 0.95;
 }
 
-
 /* animate out */
 
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
 
 /*! BLOG */
 
@@ -868,7 +851,7 @@ p.number__text {
 }
 
 .post-pos a {
-  color: #ff6600;
+  color: var(--orange);
   transition: all 0.5s;
 }
 
@@ -909,7 +892,7 @@ a.blog-desc {
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
-  color: #232121;
+  color: var(--title);
   margin-top: 25px;
   margin-bottom: 15px;
   transition: 0.3s ease;
@@ -980,7 +963,6 @@ a.read:hover {
   color: var(--orange);
 }
 
-
 /*! TESTIMONIAL */
 
 .owl-carousel .owl-item img {
@@ -1002,7 +984,7 @@ span.fa.fa-quote-left {
 blockquote q {
   font-size: 24px;
   line-height: 36px;
-  color: #232121;
+  color: var(--title);
   font-weight: 600;
   font-style: italic;
 }
@@ -1033,7 +1015,6 @@ span.fa.fa-quote-left {
 .owl-theme .owl-dots .owl-dot:hover span {
   background: var(--orange);
 }
-
 
 /*! FOOTER */
 
@@ -1080,7 +1061,7 @@ footer p {
 }
 
 .footer__contact a:hover {
-  background: #ff6600;
+  background: var(--orange);
   transition: 0.3s;
   color: #fff;
 }
@@ -1108,7 +1089,7 @@ footer a:hover {
   border: 1px solid transparent;
   outline: none;
   width: 100%;
-  color: rgba(22, 28, 45, 0.7);
+  color: var(--font);
   background: white;
   border-radius: 6px;
 }
@@ -1136,7 +1117,6 @@ footer a:hover {
 .footer__bottom a:hover {
   color: #fff;
 }
-
 
 /*! 'BACK TO TOP' BUTTON */
 
@@ -1168,24 +1148,22 @@ footer a:hover {
   opacity: 1;
 }
 
-
 /*! ANIMATION */
-
 
 /* Animation cho nút play của section "video" */
 
 @keyframes playButton {
   0% {
-    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
+      0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
   }
   100% {
-    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
+      0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }
 
-
 /*! DARK THEME  */
-
 
 /* header */
 
@@ -1219,7 +1197,6 @@ footer a:hover {
   color: #404040;
 }
 
-
 /* about us */
 
 .dark .aboutus {
@@ -1234,14 +1211,12 @@ footer a:hover {
   color: #c2d0da;
 }
 
-
 /* restaurant */
 
 .dark .restaurants .title p,
 .dark .restaurants__item a {
   color: #fff;
 }
-
 
 /* category  */
 
@@ -1252,7 +1227,6 @@ footer a:hover {
 .dark .title__gal p {
   color: #eeeeee;
 }
-
 
 /* services  */
 
@@ -1272,7 +1246,6 @@ footer a:hover {
   color: var(--orange);
 }
 
-
 /* number  */
 
 .dark .number__timer {
@@ -1288,13 +1261,11 @@ footer a:hover {
   background-color: #232220;
 }
 
-
 /* video */
 
 .dark .video__background {
   background-color: #232220;
 }
-
 
 /* blog  */
 
@@ -1318,7 +1289,6 @@ a.read:hover {
   color: var(--orange);
 }
 
-
 /* .testimonial */
 
 .dark #test {
@@ -1341,7 +1311,6 @@ a.read:hover {
   color: #eee;
 }
 
-
 /* footer */
 
 .dark .footer__contact a {
@@ -1362,15 +1331,12 @@ a.read:hover {
 }
 
 .dark #email:focus {
-  border: 2px solid var(--orange);
+  border: 1px solid var(--orange);
 }
-
 
 /*! Responsive*/
 
-
 /* Đã sử dụng responsive bằng các class bootstrap, tuy nhiên một số chổ không chỉnh được bằng class bootstrap thì sẽ được chỉnh ở dưới */
-
 
 /* Header */
 
@@ -1391,7 +1357,6 @@ a.read:hover {
     right: 35px;
   }
 }
-
 
 /* Number */
 
