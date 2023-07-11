@@ -5,13 +5,13 @@
 - Link source code của nhóm: https://github.com/kingaz123/Diner_Nhom1
 - Link deploy dự án: https://kingaz123.github.io/Diner_Nhom1/
 - Link Youtube:
-- Thành viên nhóm: - Trần Phan Nhật Quang (leader) - Nguyễn Nhật Minh Thư - Đỗ Tú
+- Thành viên nhóm: - Trần Phan Nhật Quang (leader) - Nguyễn Nhật Minh Thư - Đỗ Anh Tú
 
 # Bảng phân công công việc
 
 | STT | **Nhiệm vụ**                             | **Thành viên** |
 | --- | ---------------------------------------- | -------------- |
-| 1   | Tổ chức dự án + code các phần dùng chung | Quang          |
+| 1   | Tổ chức bố cục + code các phần dùng chung | Quang          |
 | 2   | Header + Carousel                        | Quang          |
 | 3   | Restaurants                              | Quang          |
 | 4   | Number                                   | Quang          |
