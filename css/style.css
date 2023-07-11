@@ -1327,7 +1327,7 @@ a.read:hover {
 .dark #email {
   background-color: #282828;
   color: white;
-  border: #282828;
+  border: 1px solid #282828;
 }
 
 .dark #email:focus {
