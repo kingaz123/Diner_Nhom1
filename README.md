@@ -4,7 +4,7 @@
 - Link layout mẫu: https://wp.w3layouts.com/diner/
 - Link source code của nhóm: https://github.com/kingaz123/Diner_Nhom1
 - Link deploy dự án: https://kingaz123.github.io/Diner_Nhom1/
-- Link Youtube:
+- Link Youtube: https://www.youtube.com/watch?v=FbSxOFFFyW8
 - Thành viên nhóm: - Trần Phan Nhật Quang (leader) - Nguyễn Nhật Minh Thư - Đỗ Anh Tú
 
 # Bảng phân công công việc
